@@ -71,7 +71,7 @@
   location: "Columbus, OH",
   org: "Buckeye Space Launch Initiative",
 )[
-  - Designing test stand to measure CdA for critical engine components such as injector and regenerative cooling channels
+  - Designing test stand to calibrate engine control system by measuring flow performance of critical engine components such as injector and regenerative cooling channels
   - Learning design, operations, and manufacturing hands-on 
 ]
 
@@ -82,7 +82,7 @@
   org: "Engineering Technology Services, OSU",
 )[
   - Contributed to development of Ansible build system used across the entire College of Engineering
-  - Provisioning new and converted systems with Linux
+  - Provisioned new and converted systems with Linux
 ]
 
 #experience(
@@ -107,9 +107,10 @@
     columns: (8em, 1fr),
     gutter: 0.5em,
     [CAD], [SOLIDWORKS, Solid Edge, OnShape],
-    [Analysis], [Ansys],
+    [Analysis], [Ansys Workbench],
     [Coding], [Python, MATLAB],
-    [IT], [Proxmox, SSH, Linux],
+    [IT], [Proxmox, SSH, Linux, Command Line, VIM],
+    [Office], [Excel]
   )
 ]
 
