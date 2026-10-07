@@ -1,6 +1,6 @@
 #set page(
   paper: "us-letter",
-  margin: (x: 32pt, y: 48pt),
+  margin: (x: 24pt, y: 32pt),
 )
 #set text(
   font: "ETBembo",
@@ -29,12 +29,11 @@
     heading(level: 2, name),
     text(
       style: "italic",
-      if start != "" and end != "" [#start #sym.dash.en #end]
-      else if start != "" [Since #start]
-      else if end != "" [Expected #end],
+      if start != "" and end != "" [#start #sym.dash.en #end] else if start != "" [Since #start] else if end
+        != "" [Expected #end],
     ),
-    org,
-    location,
+
+    org, location,
   )
   v(0.3em)
   bullets
@@ -59,20 +58,20 @@
   org: "The Ohio State University",
   location: "Columbus, OH",
 )[
-  - Intro to Aerospace Engineering
-  - Dynamics
+  - Selected Coursework: Dynamics, Statics & Mechanics of Materials, Intro to Aerospace (Isentropic & Viscous Flow)
 ]
 
 = Experience
 
 #experience(
-  "Liquid Rocket Systems Team",
+  "Liquid Rocket Systems Test Stand Engineer",
   start: "August 2026",
   location: "Columbus, OH",
   org: "Buckeye Space Launch Initiative",
 )[
-  - Designing test stand to calibrate engine control system by measuring flow performance of critical engine components such as injector and regenerative cooling channels
-  - Learning design, operations, and manufacturing hands-on 
+  - Engineered a test stand to calibrate mass flow rate for critical engine components, including injector plate and regenerative cooling channels, using OnShape and Ansys Workbench
+  - Developed a method to model LOX and Kerosene flow in ground tests with nitrogen using a custom Python script to explore over two million combinations of parameters
+  - Coordinated team efforts by managing tasks in self-hosted Kaneo project management software
 ]
 
 #experience(
@@ -81,8 +80,10 @@
   location: "Columbus, OH",
   org: "Engineering Technology Services, OSU",
 )[
-  - Contributed to development of Ansible build system used across the entire College of Engineering
-  - Provisioned new and converted systems with Linux
+  - Ensured compliance and security of 400+ Red Hat and Ubuntu servers and workstations across the College of Engineering by maintaining Ansible build system
+  - Automated secure secret provisioning for new system deployments by developing custom Python scripts
+  - Architected implementation strategy for security recommendations for newly adopted RHEL 10 operating system
+  - Resolved complex OS issues with Linux-based faculty research systems
 ]
 
 #experience(
@@ -92,10 +93,9 @@
   location: "Cincinnati, OH",
   org: "General Electric",
 )[
-- Reduced operating costs for digital signage by \$40k per year by migrating to new vendor
-- Developed ground-up integration system by coordinating with vendor, global stakeholders, and end users
-- Provided real-time insights to factory by developing Tableau integration for digital signage
-- Ensured reliability and ease of use of internal Microsoft Teams plugin used by 100k+ employees
+  - Owned the end-to-end development of a custom JavaScript-based Tableau integration for digital signage, providing real-time insights to factory teams across the company
+  - Reduced operating costs for digital signage by \$40k per year by migrating to new vendor
+  - Ensured the reliability and ease of use of internal Microsoft Teams plugin used by 100k+ employees
 ]
 
 = Technical Skills
@@ -107,10 +107,9 @@
     columns: (8em, 1fr),
     gutter: 0.5em,
     [CAD], [SOLIDWORKS, Solid Edge, OnShape],
-    [Analysis], [Ansys Workbench],
-    [Coding], [Python, MATLAB],
-    [IT], [Proxmox, SSH, Linux, Command Line, VIM],
-    [Office], [Excel]
+    [Analysis], [Ansys Workbench, Data Visualization],
+    [Coding], [Python, MATLAB, JavaScript],
+    [IT], [Proxmox, SSH, Linux, Bash/Shell, Vim],
   )
 ]
 
@@ -120,4 +119,3 @@
   "Solid Edge Mechanical Associate",
   start: "February 2022",
 )[]
-
